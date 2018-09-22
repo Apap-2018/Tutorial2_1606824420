@@ -40,7 +40,9 @@ public class PageController {
 		
 		model.addAttribute("a" , a);
 		model.addAttribute("b" , b);
-		
+		if (a==0) {
+			a=1;
+		}
 
 		if (a==0 && b==0) {
 		 hasil+=x+y;
